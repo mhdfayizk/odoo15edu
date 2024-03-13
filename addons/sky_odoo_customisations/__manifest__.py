@@ -21,6 +21,7 @@
 		    'data/employee_code_sequence.xml',
 			'views/hr_employee_view.xml',
 			'views/res_company_view.xml',
+			'views/hr_department_view.xml',
 			],
 	'demo': [],
 	'installable': True,
