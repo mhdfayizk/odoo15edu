@@ -25,11 +25,11 @@ class HrEmployee(models.Model):
         user_code = ''
     
         if company_id:
-            company_code = company_id.company_code
+            company_code = str(company_id.company_code)
             user_code += company_code
     
         if department_id:
-            department_code = department_id.dep_code
+            department_code = str(department_id.dep_code)
             user_code += department_code
     
         if vals.get('user_code_autogenerate'):
@@ -55,15 +55,15 @@ class HrEmployee(models.Model):
             user_code = ''
     
             if company_id:
-                company_code = company_id.company_code
+                company_code = str(company_id.company_code)
                 user_code += company_code
     
             if department_id:
-                department_code = department_id.dep_code
+                department_code = str(department_id.dep_code)
                 user_code += department_code
     
             if user_code_autogenerate:
-                user_code += user_code_autogenerate
+                user_code += str(user_code_autogenerate)
     
             vals['user_code'] = user_code
     
