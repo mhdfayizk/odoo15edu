@@ -10,7 +10,7 @@
 			<xpath expr="//div[@class='oe_title']" position="before">
 				<div>
 					<h3>
-						<field name="user_code" placeholder="User ID" />
+						<field name="user_code" placeholder="User ID" readonly="1"/>
 
 					</h3>
 				</div>

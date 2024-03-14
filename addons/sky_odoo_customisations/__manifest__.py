@@ -3,7 +3,7 @@
 
 {
 	'name': "Sky Secretary Odoo Customisations",
-	'version': "15.0.0.1",
+	'version': "15.0.0.2",
 	'category': "Human Resources/Employees",
     'license':'OPL-1',
 	'summary': "This Module provides customisations for different modules",
