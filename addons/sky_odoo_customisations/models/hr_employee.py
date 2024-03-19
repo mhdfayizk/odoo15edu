@@ -32,13 +32,14 @@ class HrEmployee(models.Model):
         company_code = getattr(company_id, 'company_code', None)
         if company_code:
             user_code += str(company_code)
-    
-        if vals.get('user_code_autogenerate'):
-            user_code += vals['user_code_autogenerate']
+
     
         department_code = getattr(department_id, 'dep_code', None)
         if department_code:
             user_code += str(department_code)
+            
+        if vals.get('user_code_autogenerate'):
+            user_code += vals['user_code_autogenerate']    
     
         vals['user_code'] = user_code
     
