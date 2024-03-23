@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class HrEmployee(models.Model):
     _inherit = "hr.employee"
 
-    user_code = fields.Char(string="User ID")
+    user_code = fields.Char(string="Employee ID")
     user_code_autogenerate = fields.Char(string="Code Sequence") 
     
     
