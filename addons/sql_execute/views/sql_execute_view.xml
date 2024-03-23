@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="execute_sql_view_form" model="ir.ui.view">
+            <field name="name">sql.execute.view.form</field>
+            <field name="model">sql.execute</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="query"/>
+                        </group>
+                         <div class="alert alert-warning" role="alert">
+                            You are about to execute SQL query operation can potentially modify or delete data from the database !
+                        </div>
+                        <footer>
+                            <button name="execute_query" type="object" string="Execute Query" class="btn-primary"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="execute_sql_action" model="ir.actions.act_window">
+            <field name="name">Execute SQL</field>
+            <field name="res_model">sql.execute</field>
+            <field name="view_mode">form</field>
+        </record>
+
+        <menuitem id="execute_sql_menu" name="Execute SQL" action="execute_sql_action" parent="base.menu_administration" sequence="10"/>
+    </data>
+</odoo>
