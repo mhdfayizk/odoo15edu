@@ -3,7 +3,7 @@
 
 {
 	'name': "Sky Secretary Odoo Customisations",
-	'version': "15.0.0.5",
+	'version': "15.0.0.6",
 	'category': "Human Resources/Employees",
     'license':'OPL-1',
 	'summary': "This Module provides customisations for different modules",
@@ -21,7 +21,6 @@
 		    'data/employee_code_sequence.xml',
 			'views/hr_employee_view.xml',
 			'views/res_company_view.xml',
-			'views/hr_department_view.xml',
 			],
 	'demo': [],
 	'installable': True,
